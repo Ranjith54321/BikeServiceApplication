@@ -153,7 +153,12 @@ jQuery(document).ready(function($) {
 	<td><input type="text" name="oil_serv" value="<%= u.getOil_service()%>" id="oil_serv"></td></tr>
 	<tr><td>Enter Water Wash Price  : </td>
 	<td><input type="text" name="wat_wash" value="<%= u.getWater_wash()%>" id="wat_wash"></td></tr>
-	<tr><td>Set Availability: </td>
+		
+	<!-- <tr><td>Set Availability: </td>
+	<td><input name="avail" placeholder="yes/no" id="avail"></td>
+	</tr>-->
+		
+	<tr><td>Set Availability: </td>  <!-- if it is not working then use above input tag  -->
 			<td><select name="avail" id="avail">
 			<option value="yes">yes</option>
 			<option value="no">no</option>

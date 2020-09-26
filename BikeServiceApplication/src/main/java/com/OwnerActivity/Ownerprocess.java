@@ -70,7 +70,7 @@ public class Ownerprocess {
 	public static List<SimpleDetails> getSimplerecords() throws SQLException{
 		List<SimpleDetails> list=new ArrayList<SimpleDetails>();
 		
-		PreparedStatement ps=(PreparedStatement) con.prepareStatement("select * from booking");
+		PreparedStatement ps=(PreparedStatement) con.prepareStatement("select * from booking order by state");
 		ResultSet rs=ps.executeQuery();
 		while(rs.next()){
 			SimpleDetails s=new SimpleDetails();

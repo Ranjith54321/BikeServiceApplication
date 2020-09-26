@@ -1,7 +1,8 @@
 # BikeServiceApplication
 
-        This application is for owners of Bike service station. It helps he owners to list the service they offer. 
-    Customers can choose one or more services to book.
+     -> This application is for owners of Bike service station. 
+     -> It helps he owners to list the service they offer. 
+     -> Customers can choose one or more services to book.
     
     
   ## Application Specifications :
@@ -77,4 +78,4 @@
         
   ## Mail Fucntionality :
   
-   Turn Less secure app access in Gmail owner gmail : by click this [https://myaccount.google.com/lesssecureapps)
+   Turn Less secure app access in Gmail owner gmail : by click this [https://myaccount.google.com/u/1/security)

@@ -75,6 +75,7 @@ public class MailOperation {
 		  try {
 
 			   if(type.equals("booking")) {
+				   //System.out.println("im coming hre");
 				   Message message = new MimeMessage(session);
 				   message.setFrom(new InternetAddress(owneremail)); // from mail
 				   message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(owneremail));// to owner mail to notify the owner
@@ -147,7 +148,33 @@ public class MailOperation {
 				   message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));// to customer mail
 				   message.setSubject("Bike Service Center");
 				   
-				   message.setText("You'r Bike is ready for Delivery \n for more Details call : "+owner_phone_number);
+				   startconnection();
+				   
+				   PreparedStatement ps = (PreparedStatement) con.prepareStatement("select * from booking where email='"+to+"'");
+				   ResultSet rs = ps.executeQuery();
+				   rs.next();
+				   
+				   String vehicle_no = rs.getString(2);
+				   int service_id = rs.getInt(3);
+				   
+				   PreparedStatement ps2 = (PreparedStatement) con.prepareStatement("select * from service where id="+service_id);
+				   ResultSet rs2 = ps2.executeQuery();
+				   rs2.next();
+				   
+				   String total = rs2.getString(5);
+				   
+				   String htmlcode = "<h1> You'r Bike is ready for Delivery</h1><table>\r\n" + 
+					   		"	<tr><td>Vehicle Number : </td>\r\n" + 
+					   		"	<td>"+ vehicle_no +"</td></tr>\r\n" + 
+					   		"	<tr><td>Total Amount : </td>\r\n" + 
+					   		"	<td>"+ total +"</td></tr>\r\n" +
+					   		"	<tr><td>For More Details call : </td>\r\n" + 
+					   		"	<td>"+ owner_phone_number +"</td></tr>\r\n" +
+					   		"	</table>";
+					   message.setContent(htmlcode,"text/html");
+					   
+				   
+				   //message.setText("You'r Bike is ready for Delivery \n for more Details call : "+owner_phone_number);
 				   Transport.send(message);
 				   System.out.println("Mail Sent to user and informed...");
 			   }
@@ -157,6 +184,6 @@ public class MailOperation {
 	}
 	/*
 	public static void main(String[] args) throws SQLException, ClassNotFoundException {
-		MailOperation.sendmail("54321@gmail.com", "delevery");
+		MailOperation.sendmail("54321@gmail.com", "ready");
 	}*/
 }

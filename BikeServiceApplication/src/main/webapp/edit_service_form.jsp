@@ -154,7 +154,10 @@ jQuery(document).ready(function($) {
 	<tr><td>Enter Water Wash Price  : </td>
 	<td><input type="text" name="wat_wash" value="<%= u.getWater_wash()%>" id="wat_wash"></td></tr>
 	<tr><td>Set Availability: </td>
-	<td><input type="text" name="avail" value="<%= u.getAilability()%>" id="avail"></td></tr>
+			<td><select name="avail" id="avail">
+			<option value="yes">yes</option>
+			<option value="no">no</option>
+			</select></td></tr>
 	
 	<tr><td colspan="2"><input type="button" id="submit" value="Enter"> </td></tr>
 	</table>

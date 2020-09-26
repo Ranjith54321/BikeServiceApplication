@@ -95,7 +95,7 @@ jQuery(document).ready(function($) {
 
 	$("#submit").click(function(){
 	    var vehicle_no = $("#vehicle_no").val();
-	    var state = $("#state").val();
+	    var state = $("#select-state").val();
 		$.ajax({
             type : 'POST',
             data: { vehicle_no : vehicle_no,
@@ -156,7 +156,14 @@ jQuery(document).ready(function($) {
 			<tr><td>Vehicle Booking Date : </td>
 			<td><input type="text" name="gen_check" value="<%= u.getBook_date()%>" id="gen_check" readonly></td></tr><!-- ${u.getBook_date()} -->
 			<tr><td>Current State Of Service : </td>
-			<td><input type="text" name="state" value="<%= u.getState()%>" id="state" ></td></tr>
+			<td><input type="text" name="state" value="<%= u.getState()%>" id="state" readonly></td></tr>
+			
+			<tr><td>Update The State Of Service : </td>
+			<td><select name="select-state" id="select-state">
+			<option value="Pending">Pending</option>
+			<option value="Ready">Ready For Delivery</option>
+			<option value="Completed">Completed</option>
+			</select></td></tr>
 			
 			<tr><td><input type="hidden" name="vehicle_no" value="<%= u.getVehicle_no()%>" id="vehicle_no"></d>
 			<td colspan="2"><input type="button" id="submit" value="Update"> </td></tr>

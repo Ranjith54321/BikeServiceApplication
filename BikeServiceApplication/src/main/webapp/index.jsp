@@ -10,18 +10,14 @@
 
   <meta charset="UTF-8">
 
-  <title>CodePen - Login</title>
+  <title>Login</title>
 
     <style type="text/css">
-    /* CSS Document */
-/* ---------- FONTAWESOME ---------- */
-/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
-/* ---------- http://weloveiconfonts.com/ ---------- */
+
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
-/* ---------- ERIC MEYER'S RESET CSS ---------- */
-/* ---------- http://meyerweb.com/eric/tools/css/reset/ ---------- */
+
 @import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
-/* ---------- FONTAWESOME ---------- */
+
 [class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif;
 }

@@ -158,7 +158,7 @@ jQuery(document).ready(function($) {
 			<tr><td>Current State Of Service : </td>
 			<td><input type="text" name="state" value="<%= u.getState()%>" id="state" readonly></td></tr>
 			
-			<tr><td>Update The State Of Service : </td>
+			<tr><td>Update The State Of Service : </td>  <!-- if it is not working then use above input tag remove readonly and change the id in above JS code -->
 			<td><select name="select-state" id="select-state">
 			<option value="Pending">Pending</option>
 			<option value="Ready">Ready For Delivery</option>

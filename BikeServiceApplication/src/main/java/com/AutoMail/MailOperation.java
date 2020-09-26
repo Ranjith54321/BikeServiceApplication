@@ -49,8 +49,8 @@ public class MailOperation {
 		private static String owner_phone_number;
 	 	
 	 	*/
-	private static String owneremail = "17euit125@skcet.ac.in";
-	private static String ownerpass = "8300662861";
+	private static String owneremail = "xyz@gmail.com";
+	private static String ownerpass = "****";
 	private static String owner_phone_number = "9876543210";
 	 	public static void startconnection() throws ClassNotFoundException, SQLException {
 			//System.out.println("connected to DB successfully");

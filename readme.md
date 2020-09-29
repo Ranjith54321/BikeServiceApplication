@@ -33,6 +33,13 @@
           
           - Receive an email as soon as booking is ready for devlivery
           
+   ## Technology Stack Used :
+   
+          FrameWork - Spring MVC 
+          Front-End - JSP,JSTL,HTML,CSS,JavaScript(JQuery,AJAX).
+          Back-End  - Java (Programming Language)
+          DataBase  - MySql
+          
    ## DataBase Schema :
     
                 mysql> use workshop;

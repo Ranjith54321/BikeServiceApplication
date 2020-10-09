@@ -3,6 +3,7 @@
      -> This application is for owners of Bike service station. 
      -> It helps he owners to list the service they offer. 
      -> Customers can choose one or more services to book.
+     -> Customer can register and login using E-mail
     
     
   ## Application Specifications :
@@ -23,7 +24,7 @@
         
    ### Customers :
     
-          - Can able to regiter for an account with his email address and mobile number
+          - Can able to register for an account with his email address and mobile number
           
           - Can Book a service at a particular date
           

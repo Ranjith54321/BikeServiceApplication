@@ -84,6 +84,6 @@
         Then make changes in peroperites file in the project.       
         
         
-  ## Mail Fucntionality :
+  ## Mail Functionality :
   
    Turn Less secure app access in Gmail owner gmail : [by click this ](https://myaccount.google.com/u/1/security)

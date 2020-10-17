@@ -36,10 +36,11 @@
           
    ## Technology Stack Used :
    
-          FrameWork - Spring MVC 
-          Front-End - JSP,JSTL,HTML,CSS,JavaScript(JQuery,AJAX).
-          Back-End  - Java (Programming Language)
-          DataBase  - MySql
+          FrameWork ->  Spring MVC 
+          Front-End -> JSP,JSTL,HTML,CSS,JavaScript(JQuery,AJAX).
+          Back-End  -> Java (Programming Language)
+          DataBase  -> MySql
+          Project-Management-Tool -> Maven
           
    ## DataBase Schema :
     
